@@ -68,7 +68,7 @@ def get_model_file(name, root=os.path.join('~', '.encoding', 'models')):
              overwrite=True)
     with zipfile.ZipFile(zip_file_path) as zf:
         zf.extractall(root)
-    os.remove(zip_file_path)
+#     os.remove(zip_file_path)
 
 #     if check_sha1(file_path, sha1_hash):
     return file_path
